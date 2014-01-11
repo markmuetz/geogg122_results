@@ -1,78 +1,111 @@
-01-11 15:13 run_project  INFO     Started at 2014-01-11 15:13:08.827018
-01-11 15:13 run_project  INFO     Using settings:
-01-11 15:13 root         INFO       APP_END_DATE: 2009-12-31 00:00:00
-01-11 15:13 root         INFO       APP_START_DATE: 2009-01-01 00:00:00
-01-11 15:13 root         INFO       CAL_END_DATE: 2008-12-31 00:00:00
-01-11 15:13 root         INFO       CAL_START_DATE: 2008-01-01 00:00:00
-01-11 15:13 root         INFO       DATA_DIR: /data/geospatial_24/ucfamue/geogg122_data
-01-11 15:13 root         INFO       ENABLE_CACHE: True
-01-11 15:13 root         INFO       END_DATE: 2010-01-31 00:00:00
-01-11 15:13 root         INFO       MODIS_DATASETS: ('AQUA', 'TERRA')
-01-11 15:13 root         INFO       RESULTS_END_DATE: 2009-12-31 00:00:00
-01-11 15:13 root         INFO       RESULTS_START_DATE: 2008-01-01 00:00:00
-01-11 15:13 root         INFO       RUN_DATA_PREPARATION: True
-01-11 15:13 root         INFO       RUN_DOWNLOAD_FILES: False
-01-11 15:13 root         INFO       RUN_DOWNLOAD_MODIS_FILES: False
-01-11 15:13 root         INFO       RUN_MODEL_APPLICATION: True
-01-11 15:13 root         INFO       RUN_MODEL_CALIBRATION: True
-01-11 15:13 root         INFO       SAVE_PICS: True
-01-11 15:13 root         INFO       SHOW_PICS: False
-01-11 15:13 root         INFO       START_DATE: 2007-12-01 00:00:00
-01-11 15:13 root         INFO       TILE: h09v05
-01-11 15:13 run_project  INFO     git revision: e16939eb3ca9b4fa7a0563b64f3c7f3ccf3c6aa9
-01-11 15:13 run_project  WARNING    Uncommitted changes
-01-11 15:13 run_project  INFO     Preparing data
-01-11 15:13 prepare      INFO     Preparing precipitation data
-01-11 15:13 prepare      INFO     Preparing temperature data
-01-11 15:13 prepare      INFO     Preparing discharge data
-01-11 15:13 prepare      INFO     Preparing all snow data
-01-11 15:13 prepare      INFO       Loading datasets ('AQUA', 'TERRA') for tile h09v05
-01-11 15:13 prepare      INFO       Daterange: 2007-12-01 00:00:00 to 2010-01-31 00:00:00
-01-11 15:13 prepare      INFO       Loading data from cache
-01-11 15:14 prepare      INFO       Saturated value count: 2138
-01-11 15:14 prepare      INFO       Hi qual: 25162671, Low qual: 1118112, hi/lo: 22.5
-01-11 15:14 prepare      INFO       Interpolating COMBINED data
-01-11 15:14 prepare      INFO         Done 0.0%
-01-11 15:14 prepare      INFO         Done 7.5%
-01-11 15:14 prepare      INFO         Done 14.9%
-01-11 15:14 prepare      INFO         Done 22.4%
-01-11 15:14 prepare      INFO         Done 29.9%
-01-11 15:14 prepare      INFO         Done 37.3%
-01-11 15:14 prepare      INFO         Done 44.8%
-01-11 15:14 prepare      INFO         Done 52.2%
-01-11 15:14 prepare      INFO         Done 59.7%
-01-11 15:14 prepare      INFO         Done 67.2%
-01-11 15:14 prepare      INFO         Done 74.6%
-01-11 15:14 prepare      INFO         Done 82.1%
-01-11 15:14 prepare      INFO         Done 89.6%
-01-11 15:14 prepare      INFO         Done 97.0%
-01-11 15:14 run_project  INFO     Calibrating model
-01-11 15:14 calibrate    INFO     Using func exponential decay
-01-11 15:14 calibrate    INFO     powell
-01-11 15:14 calibrate    INFO       estimated param values: [  5.55677672e+00   1.26623548e-05   9.72481230e-01]
-01-11 15:14 calibrate    INFO       difference in squares: 62903.2
-01-11 15:14 calibrate    INFO     Using func exponential decay with precip.
-01-11 15:15 calibrate    INFO     powell
-01-11 15:15 calibrate    INFO       estimated param values: [  5.32200917e+00   1.27384284e+01   1.12581251e-05  -2.30544033e+02
-   9.78671643e-01   9.94049717e-01]
-01-11 15:15 calibrate    INFO       difference in squares: 47046.3
-01-11 15:15 run_project  INFO     Applying model to new data
-01-11 15:15 apply_model  INFO     Func exponential decay
-01-11 15:15 apply_model  INFO       slope, intercept: 0.710344, 7.740981
-01-11 15:15 apply_model  INFO       r-value, p-value: 0.931304, 0.000000
-01-11 15:15 apply_model  INFO       Std. err.: 0.014582
-01-11 15:15 apply_model  INFO     Func exponential decay with precip.
-01-11 15:15 apply_model  INFO       slope, intercept: 0.826590, 8.291253
-01-11 15:15 apply_model  INFO       r-value, p-value: 0.924301, 0.000000
-01-11 15:15 apply_model  INFO       Std. err.: 0.017915
-01-11 15:15 results      INFO     Generating all results
-01-11 15:15 results      INFO     stats for year: 2008
-01-11 15:15 results      INFO        Temperature max, min, mean: 1598275.740079, 0.000000, 625305.250062
-01-11 15:15 results      INFO        Precip. max, min, mean: 1598275.740079, 0.000000, 625305.250062
-01-11 15:15 results      INFO        % snow cover max, min, mean: 1598275.740079, 0.000000, 625305.250062
-01-11 15:15 results      INFO        Dischage max, min, mean: 1598275.740079, 0.000000, 625305.250062
-01-11 15:15 results      INFO     stats for year: 2009
-01-11 15:15 results      INFO        Temperature max, min, mean: 1471533.727742, -0.000000, 571102.464815
-01-11 15:15 results      INFO        Precip. max, min, mean: 1471533.727742, -0.000000, 571102.464815
-01-11 15:15 results      INFO        % snow cover max, min, mean: 1471533.727742, -0.000000, 571102.464815
-01-11 15:15 results      INFO        Dischage max, min, mean: 1471533.727742, -0.000000, 571102.464815
+01-11 17:12 run_project  INFO     Started at 2014-01-11 17:12:17.199566
+01-11 17:12 run_project  INFO     Using settings:
+01-11 17:12 root         INFO       APP_END_DATE: 2009-12-31 00:00:00
+01-11 17:12 root         INFO       APP_START_DATE: 2009-01-01 00:00:00
+01-11 17:12 root         INFO       CAL_END_DATE: 2008-12-31 00:00:00
+01-11 17:12 root         INFO       CAL_START_DATE: 2008-01-01 00:00:00
+01-11 17:12 root         INFO       DATA_DIR: /data/geospatial_24/ucfamue/geogg122_data
+01-11 17:12 root         INFO       ENABLE_CACHE: True
+01-11 17:12 root         INFO       END_DATE: 2010-01-31 00:00:00
+01-11 17:12 root         INFO       MODIS_DATASETS: ('AQUA', 'TERRA')
+01-11 17:12 root         INFO       RESULTS_END_DATE: 2009-12-31 00:00:00
+01-11 17:12 root         INFO       RESULTS_START_DATE: 2008-01-01 00:00:00
+01-11 17:12 root         INFO       RUN_DATA_PREPARATION: True
+01-11 17:12 root         INFO       RUN_DOWNLOAD_FILES: False
+01-11 17:12 root         INFO       RUN_DOWNLOAD_MODIS_FILES: False
+01-11 17:12 root         INFO       RUN_MODEL_APPLICATION: True
+01-11 17:12 root         INFO       RUN_MODEL_CALIBRATION: True
+01-11 17:12 root         INFO       SAVE_PICS: True
+01-11 17:12 root         INFO       SHOW_PICS: False
+01-11 17:12 root         INFO       START_DATE: 2007-12-01 00:00:00
+01-11 17:12 root         INFO       TILE: h09v05
+01-11 17:12 run_project  INFO     git revision: e16939eb3ca9b4fa7a0563b64f3c7f3ccf3c6aa9
+01-11 17:12 run_project  WARNING    Uncommitted changes
+01-11 17:12 run_project  INFO     Preparing data
+01-11 17:12 prepare      INFO     Preparing precipitation data
+01-11 17:12 prepare      INFO     Preparing temperature data
+01-11 17:12 prepare      INFO     Preparing discharge data
+01-11 17:12 prepare      INFO     Preparing all snow data
+01-11 17:12 prepare      INFO       Loading datasets ('AQUA', 'TERRA') for tile h09v05
+01-11 17:12 prepare      INFO       Daterange: 2007-12-01 00:00:00 to 2010-01-31 00:00:00
+01-11 17:12 prepare      INFO       Loading data from cache
+01-11 17:13 prepare      INFO     Snow data shape: (1586, 134, 244)
+01-11 17:13 prepare      INFO       Saturated value count: 2138
+01-11 17:13 prepare      INFO       Hi qual: 25193873, Low qual: 1120160, hi/lo: 22.5
+01-11 17:13 prepare      INFO       Interpolating COMBINED data
+01-11 17:13 prepare      INFO         Done 0.0%
+01-11 17:13 prepare      INFO         Done 7.5%
+01-11 17:13 prepare      INFO         Done 14.9%
+01-11 17:13 prepare      INFO         Done 22.4%
+01-11 17:13 prepare      INFO         Done 29.9%
+01-11 17:13 prepare      INFO         Done 37.3%
+01-11 17:13 prepare      INFO         Done 44.8%
+01-11 17:13 prepare      INFO         Done 52.2%
+01-11 17:13 prepare      INFO         Done 59.7%
+01-11 17:13 prepare      INFO         Done 67.2%
+01-11 17:13 prepare      INFO         Done 74.6%
+01-11 17:13 prepare      INFO         Done 82.1%
+01-11 17:13 prepare      INFO         Done 89.6%
+01-11 17:13 prepare      INFO         Done 97.0%
+01-11 17:13 run_project  INFO     Calibrating model
+01-11 17:13 calibrate    INFO     Using func exponential decay
+01-11 17:13 calibrate    INFO     powell
+01-11 17:13 calibrate    INFO       estimated param values: [  5.69848166e+00   1.34938572e-05   9.72381540e-01]
+01-11 17:13 calibrate    INFO       difference in squares: 75790.2
+01-11 17:13 calibrate    INFO     Func exponential decay
+01-11 17:13 calibrate    INFO       slope, intercept: 0.800378, 7.333827
+01-11 17:13 calibrate    INFO       r-value, p-value: 0.919428, 0.000000
+01-11 17:13 calibrate    INFO       Std. err.: 0.017943
+01-11 17:13 calibrate    INFO     Using func exponential decay with precip.
+01-11 17:14 calibrate    INFO     powell
+01-11 17:14 calibrate    INFO       estimated param values: [  5.28329414e+00   4.40244373e+00   1.20557918e-05  -2.23675211e+02
+   9.79446051e-01   9.95252541e-01]
+01-11 17:14 calibrate    INFO       difference in squares: 50459.7
+01-11 17:14 calibrate    INFO     Func exponential decay with precip.
+01-11 17:14 calibrate    INFO       slope, intercept: 0.917559, 1.149968
+01-11 17:14 calibrate    INFO       r-value, p-value: 0.946210, 0.000000
+01-11 17:14 calibrate    INFO       Std. err.: 0.016445
+01-11 17:14 run_project  INFO     Applying model to new data
+01-11 17:14 apply_model  INFO     Func exponential decay
+01-11 17:14 apply_model  INFO       slope, intercept: 0.691188, 9.421112
+01-11 17:14 apply_model  INFO       r-value, p-value: 0.906738, 0.000000
+01-11 17:14 apply_model  INFO       Std. err.: 0.016872
+01-11 17:14 apply_model  INFO     Func exponential decay with precip.
+01-11 17:14 apply_model  INFO       slope, intercept: 0.875934, 1.558715
+01-11 17:14 apply_model  INFO       r-value, p-value: 0.910716, 0.000000
+01-11 17:14 apply_model  INFO       Std. err.: 0.020851
+01-11 17:14 results      INFO     Generating all results
+01-11 17:15 results      INFO     stats for year: 2008
+01-11 17:15 results      INFO        Temperature
+01-11 17:15 results      INFO          max, argmax: 18.333333, 209
+01-11 17:15 results      INFO          min, argmin: -23.055556, 17
+01-11 17:15 results      INFO          mean: 3.371281
+01-11 17:15 results      INFO        Precipitation
+01-11 17:15 results      INFO          max, argmax: 0.021600, 219
+01-11 17:15 results      INFO          min, argmin: 0.000000, 0
+01-11 17:15 results      INFO          mean: 0.000617
+01-11 17:15 results      INFO        % Snow cover
+01-11 17:15 results      INFO          max, argmax: 100.000000, 46
+01-11 17:15 results      INFO          min, argmin: 0.000000, 233
+01-11 17:15 results      INFO          mean: 39.123740
+01-11 17:15 results      INFO        Dischage
+01-11 17:15 results      INFO          max, argmax: 172.449592, 141
+01-11 17:15 results      INFO          min, argmin: 2.973269, 349
+01-11 17:15 results      INFO          mean: 27.697125
+01-11 17:15 results      INFO     stats for year: 2009
+01-11 17:15 results      INFO        Temperature
+01-11 17:15 results      INFO          max, argmax: 18.888889, 206
+01-11 17:15 results      INFO          min, argmin: -16.111111, 343
+01-11 17:15 results      INFO          mean: 4.208524
+01-11 17:15 results      INFO        Precipitation
+01-11 17:15 results      INFO          max, argmax: 0.025400, 342
+01-11 17:15 results      INFO          min, argmin: 0.000000, 0
+01-11 17:15 results      INFO          mean: 0.000710
+01-11 17:15 results      INFO        % Snow cover
+01-11 17:15 results      INFO          max, argmax: 92.070078, 7
+01-11 17:15 results      INFO          min, argmin: -0.000000, 169
+01-11 17:15 results      INFO          mean: 35.732412
+01-11 17:15 results      INFO        Dischage
+01-11 17:15 results      INFO          max, argmax: 156.592158, 127
+01-11 17:15 results      INFO          min, argmin: 3.964358, 343
+01-11 17:15 results      INFO          mean: 23.196850
