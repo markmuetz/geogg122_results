@@ -39,6 +39,9 @@ APP_END_DATE = datetime.datetime(2009, 12, 31)
 RESULTS_START_DATE = datetime.datetime(2008, 01, 01)
 RESULTS_END_DATE = datetime.datetime(2009, 12, 31)
 
+SAVE_PICS = True
+SHOW_PICS = False
+
 RUN_DOWNLOAD_FILES = False
 RUN_DOWNLOAD_MODIS_FILES = False
 RUN_DATA_PREPARATION = True
